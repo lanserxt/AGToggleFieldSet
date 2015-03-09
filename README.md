@@ -1,4 +1,4 @@
-AGToggleFieldSet
+AGToggleFieldSetView
 ===============
 
 UIView with two UITableView's which allows to toggle rows between them.
@@ -14,26 +14,25 @@ UIView with two UITableView's which allows to toggle rows between them.
 
 ##Installation
 
-Recommended way to install AGToggleFieldSet is via [CocoaPods](http://cocoapods.org/). Add the following line to your Podfile:
+Recommended way to install AGToggleFieldSetView is via [CocoaPods](http://cocoapods.org/). Add the following line to your Podfile:
 
 ```ruby
-pod 'AGToggleFieldSet'
+pod 'AGToggleFieldSetView'
 ```
 
 ##Usage
 
-To use AGToggleFieldSet you just need to add UIView to your XIB or Storyboard. Or you can always add it programatically.
+To use AGToggleFieldSetView you just need to add UIView to your XIB or Storyboard. Or you can always add it programatically.
 
-_.h_
 ```objc
-AGToggleFieldSet *toggleTableView = [[AGToggleFieldSet alloc] initWirhFrame:CGRectMake(0, 0 , 200, 200)];
+AGToggleFieldSetView *toggleTableView = [[AGToggleFieldSetView alloc] initWirhFrame:CGRectMake(0, 0 , 200, 200)];
 [self.view addSubview:toggleTableView];
 ```
 
 This component uses  delegate approach to provide content, so you need to implement this one protocol._.h_
 
 ```objc
-@interface ExampleViewController : UIViewController <AGToggleFieldSetDelegate>
+@interface ExampleViewController : UIViewController <AGToggleFieldSetViewDelegate>
 
 @end
 ```

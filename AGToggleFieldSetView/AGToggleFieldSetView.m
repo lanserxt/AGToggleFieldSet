@@ -1,19 +1,19 @@
 //
-//  AGToggleFieldSet.m
+//  AGToggleFieldSetView.m
 //  ToggleFieldSets
 //
 //  Created by Anton Gubarenko on 05.03.15.
 //  Copyright (c) 2015 Anton Gubarenko. All rights reserved.
 //
 
-#import "AGToggleFieldSet.h"
+#import "AGToggleFieldSetView.h"
 
 const CGFloat separatorWidth = 40.0f;
 static NSString *cellIdentifier = @"CellIdentifier";
 
 #define DEGREES_TO_RADIANS(angle) ((angle) / 180.0 * M_PI)
 
-@interface AGToggleFieldSet () <UITableViewDataSource, UITableViewDelegate>
+@interface AGToggleFieldSetView () <UITableViewDataSource, UITableViewDelegate>
 
 @property (nonatomic) AGToggleTablesOrientation tablesOrientation;
 @property (nonatomic) AGToggleButtonsPosition buttonsPosition;
@@ -24,7 +24,7 @@ static NSString *cellIdentifier = @"CellIdentifier";
 @property (nonatomic, strong) NSString *innerDescriptionField;
 @end
 
-@implementation AGToggleFieldSet
+@implementation AGToggleFieldSetView
 
 #pragma mark - View Lyfecycle
 

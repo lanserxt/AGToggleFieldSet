@@ -1,5 +1,5 @@
 //
-//  AGToggleFieldSet.h
+//  AGToggleFieldSetView.h
 //  ToggleFieldSets
 //
 //  Created by Anton Gubarenko on 05.03.15.
@@ -20,9 +20,9 @@ typedef enum
     AGToggleButtonsPositionCentered = 1
 }AGToggleButtonsPosition;
 
-@protocol AGToggleFieldSetDelegate;
+@protocol AGToggleFieldSetViewDelegate;
 
-@interface AGToggleFieldSet : UIView
+@interface AGToggleFieldSetView : UIView
 
 - (void)setToggleTablesOrientation:(AGToggleTablesOrientation)orientation;
 - (void)setToggleButtonsPosition:(AGToggleButtonsPosition)position;
@@ -33,7 +33,7 @@ typedef enum
 - (void)setLeftItems:(NSArray*)leftItems;
 - (void)setRightItems:(NSArray*)rightItems;
 
-@property (nonatomic, weak) id <AGToggleFieldSetDelegate>  delegate;
+@property (nonatomic, weak) id <AGToggleFieldSetViewDelegate>  delegate;
 
 @property (nonatomic, strong) UIView *separatorView;
 @property (nonatomic, strong) UITableView *leftTable;
@@ -43,10 +43,10 @@ typedef enum
 @property (nonatomic, strong) UIButton *downArrowButton;
 @end
 
-@protocol AGToggleFieldSetDelegate
+@protocol AGToggleFieldSetViewDelegate
 
 @optional
 
-- (void)fieldDidToggle:(AGToggleFieldSet*)toggleFieldSet;
+- (void)fieldDidToggle:(AGToggleFieldSetView*)toggleFieldSet;
 
 @end
