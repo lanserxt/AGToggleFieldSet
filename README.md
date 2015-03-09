@@ -81,8 +81,25 @@ With option AGToggleButtonsPositionOnSides
 or AGToggleButtonsPositionCentered
 
 
-![Demo](Centerd.gif)
+![Demo](Centered.gif)
 
 *The UITableViews will be placed equally inside the UIVIew frame. Please keep that in mind.*
 
 All internal controls (like splitter, buttons and tables) are accesable external. So it's fully customizable for you.
+
+
+##Rows representations
+
+AGToggleFieldSetView supports not only NSString array but also array's of objects. By default, row will be populated with a NSString value, but if it's a complex object - it uses a valueForKey: to show the description of the object.
+
+To set the value to get use: 
+
+```objc
+- (void)setDescriptionField:(NSString*)descriptionString;
+```
+
+In example:
+
+```objc
+
+```

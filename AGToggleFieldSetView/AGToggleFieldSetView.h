@@ -33,6 +33,8 @@ typedef enum
 - (void)setLeftItems:(NSArray*)leftItems;
 - (void)setRightItems:(NSArray*)rightItems;
 
+- (void)setDescriptionField:(NSString*)descriptionString;
+
 @property (nonatomic, weak) id <AGToggleFieldSetViewDelegate>  delegate;
 
 @property (nonatomic, strong) UIView *separatorView;
