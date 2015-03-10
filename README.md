@@ -83,7 +83,7 @@ or AGToggleButtonsPositionCentered
 
 ![Demo](Images/Centered.png)
 
-*The UITableViews will be placed equally inside the UIVIew frame. Please keep that in mind.*
+#The UITableViews will be placed equally inside the UIVIew frame. Please keep that in mind!
 
 All internal controls (like splitter, buttons and tables) are accesable external. So it's fully customizable for you.
 
