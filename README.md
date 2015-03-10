@@ -3,7 +3,7 @@ AGToggleFieldSetView
 
 UIView with two UITableView's which allows to toggle rows between them.
 
-![Demo](Demo.gif)
+![Demo](Images/Demo.gif)
 
 ##Requirements
 
@@ -62,11 +62,11 @@ To set the orinetation of the UIView you can use:
 
 With option AGToggleTablesVertical
 
-![Demo](Vertical.gif)
+![Demo](Images/Vertical.png)
 
-or AGToggleTablesVertical
+or AGToggleTablesHorizontal
 
-![Demo](Horizontal.gif)
+![Demo](Images/Horizontal.png)
 
 Also, toggle arrows are also have 2 alignment positions
 
@@ -76,12 +76,12 @@ Also, toggle arrows are also have 2 alignment positions
 
 With option AGToggleButtonsPositionOnSides
 
-![Demo](OnSides.gif)
+![Demo](Images/Vertical.png)
 
 or AGToggleButtonsPositionCentered
 
 
-![Demo](Centered.gif)
+![Demo](Images/Centered.png)
 
 *The UITableViews will be placed equally inside the UIVIew frame. Please keep that in mind.*
 
@@ -101,5 +101,7 @@ To set the value to get use:
 In example:
 
 ```objc
-
+[self.toggleTables setLeftItems:@[@{@"text": @"one"}, @"two"]];
+[self.toggleTables setRightItems:@[@{@"text": @"three"}, @"four"]];
+[self.toggleTables setDescriptionField:@"text"];
 ```
